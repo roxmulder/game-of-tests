@@ -13,16 +13,17 @@ class DothrakiTest {
 	
 	@BeforeEach
 	void init() {
+		//tiene 5 tatuajes
 		khal = new Dothraki(5);
 	}
 	
 	@Test
 	void test_esKamikaze() {
-		assertTrue(khal.esKamikaze(), "Testing Es kamikaze");
+		assertTrue(khal.esKamikaze(), "Testing Es kamikaze dothraki");
 	}
 	
 	@Test
 	void test_potenciaDeAtaque(){
-		assertEquals(25, khal.potenciaDeAtaque());
+		assertEquals(25, khal.potenciaDeAtaque(), "Testing potencia de ataque dothraki");
 	}
 }
